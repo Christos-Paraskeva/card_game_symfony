@@ -5,7 +5,7 @@ parameters:
 
 services:
     app.message_generator:
-        class:    AppBundle\Service\MessageGenerator
+        class:    Bundle\AppBundle\Service\MessageGenerator
         arguments: [extraWord]
     #service_name:
     #    class: AppBundle\Directory\ClassName
