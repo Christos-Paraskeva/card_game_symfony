@@ -28,12 +28,20 @@ class DefaultController extends Controller
     /**
      * @Route("/welcome", name="welcome")
      */
-    public function welcome(Request $request)
+    public function welcomeAction(Request $request)
     {
         $name = $request->request->get('name');
+
+//        $deck = $this->container->get('app.deck_generator');
+//        $card = $this->container->get('app.card_generator');
+////
+//        $x = $deck->createDeck('standard', $card);
+//        var_dump($card);
+//        var_dump($x);
 
         return $this->render('default/welcome.html.twig', array(
             'name' => $name,
         ));
     }
+
 }

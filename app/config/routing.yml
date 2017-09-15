@@ -1,3 +1,11 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+card:
+    resource: '@CardBundle/Controller/'
+    type: annotation
+
+deck:
+    resource: '@DeckBundle/Controller/'
+    type: annotation

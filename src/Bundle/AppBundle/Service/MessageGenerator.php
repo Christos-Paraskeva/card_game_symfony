@@ -7,9 +7,8 @@ class MessageGenerator
     public function getHappyMessage($extraWord)
     {
         $messages = [
-            'You did it! You updated the system! Amazing!',
-            'That was one of the coolest updates I\'ve seen all day!',
-            'Great work! Keep going!',
+            'This should say something',
+            'This should say something better',
         ];
 
         $index = array_rand($messages);
