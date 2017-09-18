@@ -18,7 +18,7 @@ class DeckController extends Controller
 
         $deck->createDeck('standard');
         $deckOfCards = $deck->cards;
-        return $this->render('deck/deck.html.twig', array(
+        return $this->render('DeckBundle::deck.html.twig', array(
             'deckOfCards' => $deckOfCards,
         ));
     }

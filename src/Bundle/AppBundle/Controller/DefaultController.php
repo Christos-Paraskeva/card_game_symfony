@@ -20,7 +20,7 @@ class DefaultController extends Controller
         $message = $this->container->get('app.message_generator');
         $m = $message->generateMessage();
 //        var_dump($m);
-        return $this->render('default/test.html.twig', array(
+        return $this->render('AppBundle::test.html.twig', array(
             'm' => $m,
         ));
     }
@@ -39,7 +39,7 @@ class DefaultController extends Controller
 //        var_dump($card);
 //        var_dump($x);
 
-        return $this->render('default/welcome.html.twig', array(
+        return $this->render('AppBundle:default:welcome.html.twig', array(
             'name' => $name,
         ));
     }

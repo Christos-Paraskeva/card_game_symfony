@@ -44,7 +44,7 @@ class CardController extends Controller
     {
         $name = $request->request->get('name');
 
-        return $this->render('card/card.html.twig', array(
+        return $this->render('CardBundle::card.html.twig', array(
             'name' => $name,
         ));
     }
