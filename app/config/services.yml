@@ -6,7 +6,6 @@ parameters:
 services:
     app.message_generator:
         class:    Bundle\AppBundle\Service\MessageGenerator
-        arguments: [extraWord]
 
     app.card_generator:
         class:    Bundle\CardBundle\Service\Card

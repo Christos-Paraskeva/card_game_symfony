@@ -4,18 +4,13 @@ namespace Bundle\AppBundle\Service;
 
 class MessageGenerator
 {
-    public function getHappyMessage($extraWord)
+    public function __construct ()
     {
-        $messages = [
-            'This should say something',
-            'This should say something better',
-        ];
 
-        $index = array_rand($messages);
+    }
 
-//        var_dump($extraWord);
-        $arrWord = $messages[$index];
-
-        return $arrWord;
+    public function generateMessage()
+    {
+        return 'this is a message';
     }
 }

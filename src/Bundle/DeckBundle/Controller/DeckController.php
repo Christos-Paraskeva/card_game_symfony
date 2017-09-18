@@ -15,9 +15,8 @@ class DeckController extends Controller
     public function createDeckAction(Request $request)
     {
         $deck = $this->container->get('app.deck_generator');
-        $card = $this->container->get('app.card_generator');
-//
-        $deck->createDeck('standard', $card);
+
+        $deck->createDeck('standard');
         $deckOfCards = $deck->cards;
         return $this->render('deck/deck.html.twig', array(
             'deckOfCards' => $deckOfCards,

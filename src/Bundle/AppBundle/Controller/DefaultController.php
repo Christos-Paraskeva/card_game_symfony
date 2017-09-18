@@ -18,7 +18,7 @@ class DefaultController extends Controller
 //        $logger = $this->container->get('logger');
 //        $logger1 = $logger->info('I just used a service');
         $message = $this->container->get('app.message_generator');
-        $m = $message->getHappyMessage('hello');
+        $m = $message->generateMessage();
 //        var_dump($m);
         return $this->render('default/test.html.twig', array(
             'm' => $m,

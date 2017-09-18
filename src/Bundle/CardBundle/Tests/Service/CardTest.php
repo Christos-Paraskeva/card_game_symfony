@@ -11,14 +11,7 @@ class CardTest extends WebTestCase
 
     protected function setUp()
     {
-//        self::bootKernel();
-//        $this->cardContainer = static::$kernel->getContainer()->get('app.card_generator');
-//        var_dump($this->cardContainer->createCard(1, "Ace", "Heart", 1));
-          $this->card = new Card(1, "Ace", "Heart", 1);
-//          $this->card = $this->card->createCard(1, "Ace", "Heart", 1);
-
-//        var_dump('hello');
-//        var_dump($this->card);
+        $this->card = new Card(1, "Ace", "Heart", 1);
     }
 
     protected function tearDown()
@@ -33,7 +26,6 @@ class CardTest extends WebTestCase
 
     public function testIsInitializedWithAValue()
     {
-        var_dump($this->card->value);
         $this->assertEquals($this->card->value, '1');
     }
 

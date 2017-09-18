@@ -15,7 +15,7 @@ class Deck {
     /**
      * This method can throw an exception.
      *
-     * @throws RuntimeException
+     * @throws Exception
      */
     public function createDeck($type = null) {
 
@@ -30,9 +30,9 @@ class Deck {
             return $this->cards;
         } else {
 //            $error = 'Always throw this error';
-            var_dump('here');
+//            var_dump('here');
             throw new \Exception('error');
-            var_dump('here2');
+//            var_dump('here2');
         }
     }
 
