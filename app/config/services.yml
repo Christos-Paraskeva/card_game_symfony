@@ -15,6 +15,7 @@ services:
     app.deck_generator:
         class:    Bundle\DeckBundle\Service\Deck
         arguments: [type]
+
     #service_name:
     #    class: AppBundle\Directory\ClassName
     #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']

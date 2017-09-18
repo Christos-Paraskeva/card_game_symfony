@@ -3,6 +3,7 @@
 namespace Bundle\CardBundle\Tests\Service;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Bundle\CardBundle\Service\Card;
 
 class CardTest extends WebTestCase
 {
@@ -10,10 +11,12 @@ class CardTest extends WebTestCase
 
     protected function setUp()
     {
-        self::bootKernel();
-        $this->cardContainer = static::$kernel->getContainer()->get('app.card_generator');
+//        self::bootKernel();
+//        $this->cardContainer = static::$kernel->getContainer()->get('app.card_generator');
 //        var_dump($this->cardContainer->createCard(1, "Ace", "Heart", 1));
-        $this->card = $this->cardContainer->createCard(1, "Ace", "Heart", 1);
+          $this->card = new Card(1, "Ace", "Heart", 1);
+//          $this->card = $this->card->createCard(1, "Ace", "Heart", 1);
+
 //        var_dump('hello');
 //        var_dump($this->card);
     }
@@ -23,10 +26,10 @@ class CardTest extends WebTestCase
         $this->card = NULL;
     }
 
-//    public function testExists()
-//    {
-//        $this->assertInstanceOf(Card::class, $this->card);
-//    }
+    public function testExists()
+    {
+        $this->assertInstanceOf(Card::class, $this->card);
+    }
 
     public function testIsInitializedWithAValue()
     {

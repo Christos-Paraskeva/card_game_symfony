@@ -12,9 +12,4 @@ class Card
         $this->originalDeckPosition = $originalDeckPosition;
     }
 
-    public function createCard($value, $name, $suit, $originalDeckPosition)
-    {
-        return new Card($value, $name, $suit, $originalDeckPosition);
-    }
-
 }
