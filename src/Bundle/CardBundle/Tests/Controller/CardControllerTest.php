@@ -13,7 +13,7 @@ class CardControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/cardtest');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-//        $this->assertContains('Test', $crawler->filter('#container h1')->text());
+//        $this->assertContains('Tests', $crawler->filter('#container h1')->text());
     }
 
 }

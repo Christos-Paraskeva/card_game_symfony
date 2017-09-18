@@ -13,7 +13,7 @@ class DeckControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/deck');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-//        $this->assertContains('Test', $crawler->filter('#container h1')->text());
+//        $this->assertContains('Tests', $crawler->filter('#container h1')->text());
     }
     
 }

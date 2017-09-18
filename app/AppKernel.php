@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Bundle\AppBundle\AppBundle(),
             new Bundle\CardBundle\CardBundle(),
             new Bundle\DeckBundle\DeckBundle(),
+            new Bundle\PlayerBundle\PlayerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
