@@ -15,7 +15,7 @@ class Deck {
     /**
      * This method can throw an exception.
      *
-     * @throws Exception
+     * @ throw Exception
      */
     public function createDeck($type = null) {
 
@@ -29,10 +29,8 @@ class Deck {
             }
             return $this->cards;
         } else {
-//            $error = 'Always throw this error';
-//            var_dump('here');
-            throw new \Exception('error');
-//            var_dump('here2');
+            # can maybe throw a better type of error here?
+            throw new \Exception('Error: Must specify a type of Deck');
         }
     }
 

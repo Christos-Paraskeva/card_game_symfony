@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c2dc20-2a13-4268-baed-306f7c602b19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Bundle/CardBundle/Tests/Controller/CardControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Bundle/DeckBundle/Tests/Controller/DeckControllerTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/card/card.html.twig" afterPath="$PROJECT_DIR$/src/Bundle/CardBundle/Resources/views/card.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/deck/deck.html.twig" afterPath="$PROJECT_DIR$/src/Bundle/DeckBundle/Resources/views/deck.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/src/Bundle/AppBundle/Resources/views/default/index.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/test.html.twig" afterPath="$PROJECT_DIR$/src/Bundle/AppBundle/Resources/views/test.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/welcome.html.twig" afterPath="$PROJECT_DIR$/src/Bundle/AppBundle/Resources/views/default/welcome.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Bundle/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/AppBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/Bundle/AppBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/CardBundle/Controller/CardController.php" afterPath="$PROJECT_DIR$/src/Bundle/CardBundle/Controller/CardController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/DeckBundle/Controller/DeckController.php" afterPath="$PROJECT_DIR$/src/Bundle/DeckBundle/Controller/DeckController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php" afterPath="$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,16 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bundle/AppBundle/Resources/views/default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bundle/AppBundle/Resources/views/test.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,8 +48,8 @@
       <file leaf-file-name="DeckController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Bundle/DeckBundle/Controller/DeckController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="391">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,6 +80,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
               <caret line="27" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Deck.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -160,7 +149,6 @@
         <option value="$PROJECT_DIR$/src/Bundle/CardBundle/Service/Card.php" />
         <option value="$PROJECT_DIR$/src/Bundle/DeckBundle/Tests/Service/DeckTest.php" />
         <option value="$PROJECT_DIR$/src/Bundle/CardBundle/Tests/Service/CardTest.php" />
-        <option value="$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/Bundle/AppBundle/Service/MessageGenerator.php" />
         <option value="$PROJECT_DIR$/src/Bundle/AppBundle/Controller/DefaultController.php" />
@@ -169,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/Bundle/DeckBundle/Tests/Controller/DeckControllerTest.php" />
         <option value="$PROJECT_DIR$/src/Bundle/CardBundle/Controller/CardController.php" />
         <option value="$PROJECT_DIR$/src/Bundle/DeckBundle/Controller/DeckController.php" />
+        <option value="$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php" />
       </list>
     </option>
   </component>
@@ -223,13 +212,6 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="card_game_symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="card_game_symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="CardBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -281,12 +263,12 @@
       <updated>1505208270349</updated>
       <workItem from="1505208271563" duration="8500000" />
       <workItem from="1505489807887" duration="12095000" />
-      <workItem from="1505735239787" duration="2805000" />
+      <workItem from="1505735239787" duration="3213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40256000" />
+    <option name="totallyTimeSpent" value="40664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -545,14 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bundle/AppBundle/Service/MessageGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -661,10 +635,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bundle/DeckBundle/Service/Deck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bundle/DeckBundle/Controller/DeckController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="391">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
