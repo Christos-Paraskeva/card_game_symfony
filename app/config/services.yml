@@ -5,19 +5,20 @@ parameters:
 
 services:
     app.message_generator:
-        class:    Bundle\AppBundle\Service\MessageGenerator
+        class:      Bundle\AppBundle\Service\MessageGenerator
 
     app.card_generator:
-        class:    Bundle\CardBundle\Service\Card
-        arguments: [value, name, suit, originalDeckPosition]
+        class:      Bundle\CardBundle\Service\Card
+#        factory:    [Bundle\CardBundle\Service\Card, createCard]
+#        arguments:  [value, name, suit, originalDeckPosition]
 
     app.deck_generator:
-        class:    Bundle\DeckBundle\Service\Deck
-        arguments: [type]
+        class:      Bundle\DeckBundle\Service\Deck
+#        arguments:  ['@app.card_generator']
 
     app.player:
-        class:    Bundle\PlayerBundle\Service\Player
-        arguments: [name, id]
+        class:      Bundle\PlayerBundle\Service\Player
+#        arguments:  [name, id]
 
     #service_name:
     #    class: AppBundle\Directory\ClassName

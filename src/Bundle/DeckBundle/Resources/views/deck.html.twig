@@ -6,6 +6,11 @@
 
     <h5> {{ dump(deckOfCards) }} </h5>
 
+    <form action="players" method="post">
+        Name: <input type="text" name="Player Name"><br>
+        <input type="submit">
+    </form>
+
 {% endblock %}
 
 {% block stylesheets %}

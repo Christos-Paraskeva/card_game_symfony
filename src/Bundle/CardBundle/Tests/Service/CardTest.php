@@ -44,4 +44,9 @@ class CardTest extends WebTestCase
         $this->assertEquals($this->card->originalDeckPosition, 1);
     }
 
+    public function testCreateCardFunctionReturnsInstanceOfCard()
+    {
+        $this->assertInstanceOf(Card::class, $this->card->createCard(2, 'Two', "Heart", 2));
+    }
+
 }

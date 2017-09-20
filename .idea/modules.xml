@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/test_services.iml" filepath="$PROJECT_DIR$/.idea/test_services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/card_game_symfony.iml" filepath="$PROJECT_DIR$/.idea/card_game_symfony.iml" />
     </modules>
   </component>
 </project>
