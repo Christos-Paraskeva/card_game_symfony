@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class CardControllerTest extends WebTestCase
 {
-    public function testCardTest()
+    public function testCardController()
     {
         $client = static::createClient();
 

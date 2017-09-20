@@ -2,14 +2,24 @@
 
 {% block body %}
 
-    <h1>deck test</h1>
+    <h1>player test</h1>
 
-    <form action="/player" method="post">
-        Name: <input type="text" name="player_name"><br>
+    {% for obj in currentPlayers %}
+        {{ dump(obj) }}
+        id : {{ obj.id }}
+        {#Value : {{ value }}#}
+    {% endfor %}
+
+    {#<h5> Player {{ currentPlayers[0].id }}: {{ currentPlayers[0].name }}</h5>#}
+    {#<h5> Player {{ currentPlayers[1].id }}: {{ currentPlayers[1].name }}</h5>#}
+    {#<h5> Player {{ currentPlayers[2].id }}: {{ currentPlayers[2].name }}</h5>#}
+    {#<h5> Player {{ currentPlayers[3].id }}: {{ currentPlayers[3].name }}</h5>#}
+
+
+    <form action="player" method="post">
+        Enter Player Name: <input type="text" name="player_name"><br>
         <input type="submit">
     </form>
-
-    <h5> {{ dump(deckOfCards) }} </h5>
 
 {% endblock %}
 

@@ -9,3 +9,7 @@ card:
 deck:
     resource: '@DeckBundle/Controller/'
     type: annotation
+
+player:
+    resource: '@PlayerBundle/Controller/'
+    type: annotation
