@@ -4,22 +4,18 @@
 
     <h1>player test</h1>
 
-    {% for obj in currentPlayers %}
-        {{ dump(obj) }}
-        id : {{ obj.id }}
-        {#Value : {{ value }}#}
-    {% endfor %}
-
-    {#<h5> Player {{ currentPlayers[0].id }}: {{ currentPlayers[0].name }}</h5>#}
-    {#<h5> Player {{ currentPlayers[1].id }}: {{ currentPlayers[1].name }}</h5>#}
-    {#<h5> Player {{ currentPlayers[2].id }}: {{ currentPlayers[2].name }}</h5>#}
-    {#<h5> Player {{ currentPlayers[3].id }}: {{ currentPlayers[3].name }}</h5>#}
-
+    <form method="post" action="end_game">
+        <button type="submit">End Game</button>
+    </form>
 
     <form action="player" method="post">
         Enter Player Name: <input type="text" name="player_name"><br>
         <input type="submit">
     </form>
+
+    {% for obj in currentPlayers %}
+        {{ dump(obj) }}
+    {% endfor %}
 
 {% endblock %}
 

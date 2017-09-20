@@ -14,12 +14,9 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
-//        $logger = $this->container->get('logger');
-//        $logger1 = $logger->info('I just used a service');
         $message = $this->container->get('app.message_generator');
         $m = $message->generateMessage();
-//        var_dump($m);
+
         return $this->render('AppBundle::test.html.twig', array(
             'm' => $m,
         ));
@@ -32,16 +29,20 @@ class DefaultController extends Controller
     {
         $name = $request->request->get('name');
 
-//        $deck = $this->container->get('app.deck_generator');
-//        $card = $this->container->get('app.card_generator');
-////
-//        $x = $deck->createDeck('standard', $card);
-//        var_dump($card);
-//        var_dump($x);
-
         return $this->render('AppBundle:default:welcome.html.twig', array(
             'name' => $name,
         ));
+    }
+
+    /**
+     * @Route("/end_game", name="end_game")
+     */
+    public function endGameAction()
+    {
+        $currentPlayersSession =  $this->container->get('session');
+        $currentPlayersSession->remove('currentPlayers');
+
+        return $this->redirect($this->generateUrl('welcome'));
     }
 
 }
