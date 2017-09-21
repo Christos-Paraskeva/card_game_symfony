@@ -59,6 +59,6 @@ class PlayerTest extends WebTestCase
     {
         $testNewPlayer = $this->player->createPlayer('Player Name', '1');
         $this->assertInstanceOf(Player::class, $testNewPlayer);
-
     }
+
 }
