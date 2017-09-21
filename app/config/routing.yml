@@ -17,3 +17,7 @@ player:
 shuffle:
     resource: '@ShuffleBundle/Controller/'
     type: annotation
+
+dealer:
+    resource: '@DealerBundle/Controller/'
+    type: annotation
