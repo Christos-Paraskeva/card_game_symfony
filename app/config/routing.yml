@@ -13,3 +13,7 @@ deck:
 player:
     resource: '@PlayerBundle/Controller/'
     type: annotation
+
+shuffle:
+    resource: '@ShuffleBundle/Controller/'
+    type: annotation

@@ -22,6 +22,9 @@ services:
 
     app.dealer:
         class:      Bundle\DealerBundle\Service\Dealer
+
+    app.shuffle:
+        class:      Bundle\ShuffleBundle\Service\Shuffle
     #service_name:
     #    class: AppBundle\Directory\ClassName
     #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']

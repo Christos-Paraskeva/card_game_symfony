@@ -39,8 +39,8 @@ class DefaultController extends Controller
      */
     public function endGameAction()
     {
-        $currentPlayersSession =  $this->container->get('session');
-        $currentPlayersSession->remove('currentPlayers');
+        $session = $this->container->get('session');
+        $session->remove('currentPlayers');
 
         return $this->redirect($this->generateUrl('welcome'));
     }

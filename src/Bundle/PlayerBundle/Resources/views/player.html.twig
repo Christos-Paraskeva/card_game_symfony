@@ -17,6 +17,10 @@
         <h5> Player {{ obj.id }}:  {{ obj.name }} <h5>
     {% endfor %}
 
+    <form method="post" action="deal_cards">
+        <button type="submit">Deal Cards Out</button>
+    </form>
+
 {% endblock %}
 
 {% block stylesheets %}
