@@ -4,7 +4,7 @@ namespace Bundle\DeckBundle\Service;
 
 use Bundle\CardBundle\Service\Card;
 
-# shall I use '\Bundle\CardBundle\Service\Card $cardTemplate' as contruct argument instead?
+// shall I use '\Bundle\CardBundle\Service\Card $cardTemplate' as contruct argument instead?
 class Deck {
     public function __construct ($cardTemplate = 1) {
 

@@ -15,6 +15,9 @@
 
     {% for obj in currentPlayers %}
         <h5> Player {{ obj.id }}:  {{ obj.name }} <h5>
+        {%  if obj.cardsHeld %}
+            <li> {{ dump(obj.cardsHeld) }}</li>
+        {% endif %}
     {% endfor %}
 
     <form method="post" action="deal_cards">
