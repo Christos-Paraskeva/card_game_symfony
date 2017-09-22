@@ -16,16 +16,16 @@ class DealerTest extends WebTestCase
     {
       // should also try doubling the shuffle class and deck
 
-        $playerDouble1 = $this->getMockBuilder('Player',
+        $playerDouble1 = $this->getMockBuilder('PlayerEntity',
             array(),
             array());
-        $playerDouble2 = $this->getMockBuilder('Player',
+        $playerDouble2 = $this->getMockBuilder('PlayerEntity',
             array(),
             array());
-        $playerDouble3 = $this->getMockBuilder('Player',
+        $playerDouble3 = $this->getMockBuilder('PlayerEntity',
             array(),
             array());
-        $playerDouble4 = $this->getMockBuilder('Player',
+        $playerDouble4 = $this->getMockBuilder('PlayerEntity',
             array(),
             array());
 

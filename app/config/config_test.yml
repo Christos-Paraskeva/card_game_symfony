@@ -1,6 +1,13 @@
 imports:
     - { resource: config_dev.yml }
 
+doctrine:
+    dbal:
+        host:     127.0.0.1
+        dbname:   card_game_test
+        user:     root
+        password: null
+
 framework:
     test: ~
     session:

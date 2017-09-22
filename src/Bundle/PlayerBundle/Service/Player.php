@@ -2,6 +2,8 @@
 
 namespace Bundle\PlayerBundle\Service;
 
+use Bundle\PlayerBundle\Entity\PlayerEntity;
+use Doctrine\ORM\EntityRepository;
 
 class Player {
 
@@ -31,13 +33,18 @@ class Player {
         return new Player($name, $id);
     }
 
-//    public function updateCurrentPlayersList($player)
-//    {
-//        if (empty($currentPlayers)) {
-//            array_push($currentPlayers, $player);
-//        } else {
-////
-//        }
-//    }
+    public function getDoctrineService($doctrineService)
+    {
+        $this->em = $doctrineService;
+    }
+
+    public function savePlayers($currentPlayers)
+    {
+            $playerEntity = new PlayerEntity();
+            $playerEntity->setName('Christos');
+            // make some changes to database
+            $this->em->persist($playerEntity);
+            $this->em->flush();
+    }
 
 }

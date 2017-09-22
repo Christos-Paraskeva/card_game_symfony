@@ -56,4 +56,15 @@ class ShuffleTest extends WebTestCase
         $this->assertNotEquals($shuffledCards, $invalidScenarioThree);
     }
 
+//    /**
+//     * @expectedException Exception
+//     * @doesNotPerformAssertions
+//     */
+////    public function testEdgeCaseThrowExceptionWhenNoDeckTypeIsSpecified()
+////    {
+////        // seems to just be testing the annotation - no assert needed?
+////        $deck = [1];
+////        $this->assertEquals($this->shuffle->defaultShuffle($deck));
+////    }
+
 }

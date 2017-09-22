@@ -30,6 +30,7 @@ class Dealer {
                 }
             }
         } else {
+            // use a better type of error here / a popup?
             throw new \Exception('Cannot Deal: Not enough cards or players');
         }
     }

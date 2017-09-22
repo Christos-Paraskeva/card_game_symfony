@@ -9,9 +9,19 @@ class PlayerTest extends WebTestCase
 {
 
     private $player;
+    protected static $kernel;
+    protected static $container;
 
     protected function setUp()
     {
+        self::$kernel = new \AppKernel('test', true);
+        self::$kernel->boot();
+        self::$container = self::$kernel->getContainer();
+
+        $this->em = static::$kernel->getContainer()
+            ->get('doctrine')
+            ->getManager();
+
         $this->player = new Player('Test Name', 1);
     }
 
@@ -57,8 +67,14 @@ class PlayerTest extends WebTestCase
 
     public function testCanCreateANewPlayer()
     {
-        $testNewPlayer = $this->player->createPlayer('Player Name', '1');
+        $testNewPlayer = $this->player->createPlayer('PlayerEntity Name', '1');
         $this->assertInstanceOf(Player::class, $testNewPlayer);
+    }
+
+    public function testCanSavePlayerToDatabase()
+    {
+        $this->player->getDoctrineService($this->em);
+        $this->assertEquals($this->player->savePlayers($this->player->name), 'compare');
     }
 
 }

@@ -20,8 +20,10 @@
         {% endif %}
     {% endfor %}
 
-    <form method="post" action="deal_cards">
-        <button type="submit">Deal Cards Out</button>
+    <form action="deal_cards" method="post">
+             <h4> Deal Cards </h4>
+        How Many: <input type="text" name="amount_of_cards"><br>
+        <input type="submit">
     </form>
 
 {% endblock %}

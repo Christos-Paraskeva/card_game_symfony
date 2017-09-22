@@ -25,7 +25,7 @@ class Shuffle {
             return $deck;
 
         } else {
-            echo 'THIS SHOULD BE AN ERROR';
+            throw new \Exception('Cannot Shuffle: Please provide a valid deck');
         }
     }
 

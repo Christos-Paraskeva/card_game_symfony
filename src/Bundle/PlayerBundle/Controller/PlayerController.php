@@ -39,4 +39,16 @@ class PlayerController extends Controller
         ));
     }
 
+    /**
+     * @Route("/save_player", name="save_player")
+     */
+//    public function savePlayerAction(Request $request)
+//    {
+//
+//        $playerService = $this->container->get('app.player');
+//        $currentPlayersSession = $this->get('session')->get('currentPlayers');
+//
+//        delegate database work to player service
+//    }
+
 }

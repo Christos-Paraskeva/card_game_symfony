@@ -19,7 +19,9 @@ class DealerController extends Controller
         $deckOfCards = $this->get('session')->get('deckOfCards');
         $currentPlayers = $this->get('session')->get('currentPlayers');
 
-        $dealerService->dealTheCards(7, $currentPlayers, $deckOfCards);
+        $amountOfCards = $request->request->get('amount_of_cards');
+
+        $dealerService->dealTheCards($amountOfCards, $currentPlayers, $deckOfCards);
 
         return $this->redirect($this->generateUrl('player'));
     }
