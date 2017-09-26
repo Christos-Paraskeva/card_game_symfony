@@ -4,6 +4,9 @@ namespace Bundle\PlayerBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+
+
+
 /**
  * PlayerEntity
  *

@@ -38,15 +38,16 @@ class Player {
 //        $this->em = $doctrineService;
 //    }
 
-    public function savePlayers()
+    public function savePlayers($entityManager)
     {
+        $em = $entityManager;
             $playerEntity = new PlayerEntity();
             $playerEntity->setName($this->name);
             // make some changes to database
 
-        return $playerEntity;
-//            $this->em->persist($playerEntity);
-//            $this->em->flush();
+//        return $playerEntity;
+            $em->persist($playerEntity);
+            $em->flush();
     }
 
 }

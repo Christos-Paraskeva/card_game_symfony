@@ -7,6 +7,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+
+
 class PlayerController extends Controller
 {
     /**
@@ -31,10 +33,10 @@ class PlayerController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $player = $playerService->createPlayer(ucwords($playerName), $newPlayerId);
-        $player->savePlayers();
+        $player->savePlayers($em);
 
-        $em->persist($player);
-        $em->flush();
+//        $em->persist($player);
+//        $em->flush();
 //        $player->getDoctrineService($em);
 //        $player->savePlayers($player->name);
 
