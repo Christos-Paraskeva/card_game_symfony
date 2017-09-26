@@ -7,7 +7,7 @@ use Doctrine\ORM\EntityRepository;
 
 class Player {
 
-    public function __construct ($name = null, $id = null, $currentPlayers = null) {
+    public function __construct ($name = null, $id = null) {
         $this->name = $name;
         $this->id = $id;
         $this->cardsHeld = [];
@@ -33,18 +33,20 @@ class Player {
         return new Player($name, $id);
     }
 
-    public function getDoctrineService($doctrineService)
-    {
-        $this->em = $doctrineService;
-    }
+//    public function getDoctrineService($doctrineService)
+//    {
+//        $this->em = $doctrineService;
+//    }
 
-    public function savePlayers($currentPlayers)
+    public function savePlayers()
     {
             $playerEntity = new PlayerEntity();
-            $playerEntity->setName('Christos');
+            $playerEntity->setName($this->name);
             // make some changes to database
-            $this->em->persist($playerEntity);
-            $this->em->flush();
+
+        return $playerEntity;
+//            $this->em->persist($playerEntity);
+//            $this->em->flush();
     }
 
 }

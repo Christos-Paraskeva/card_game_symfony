@@ -2,33 +2,8 @@
 
 {% block body %}
 
-    <h1>player test</h1>
-
-    <form method="post" action="end_game">
-        <button type="submit">End Game</button>
-    </form>
-
-    <form method="post" action="load_player">
-        <button type="submit">Load Players</button>
-    </form>
-
-     <form action="player" method="post">
-        Enter Player Name: <input type="text" name="player_name"><br>
-        <input type="submit">
-    </form>
-
-    {% for obj in currentPlayers %}
-        <h5> Player {{ obj.id }}:  {{ obj.name }} <h5>
-        {%  if obj.cardsHeld %}
-            <li> {{ dump(obj.cardsHeld) }}</li>
-        {% endif %}
-    {% endfor %}
-
-    <form action="deal_cards" method="post">
-             <h4> Deal Cards </h4>
-        How Many: <input type="text" name="amount_of_cards"><br>
-        <input type="submit">
-    </form>
+    <h1>load player test</h1>
+{{ dump(currentPlayers) }}
 
 {% endblock %}
 

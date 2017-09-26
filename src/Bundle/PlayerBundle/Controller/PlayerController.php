@@ -27,7 +27,16 @@ class PlayerController extends Controller
         }
 
         $playerName = $request->request->get('player_name');
+
+        $em = $this->getDoctrine()->getManager();
+
         $player = $playerService->createPlayer(ucwords($playerName), $newPlayerId);
+        $player->savePlayers();
+
+        $em->persist($player);
+        $em->flush();
+//        $player->getDoctrineService($em);
+//        $player->savePlayers($player->name);
 
         array_push($currentPlayers, $player);
 
@@ -51,4 +60,20 @@ class PlayerController extends Controller
 //        delegate database work to player service
 //    }
 
+    /**
+     * @Route("/load_player", name="load_player")
+     */
+    public function loadPlayerAction(Request $request)
+    {
+        $player = $this->getDoctrine()
+            ->getRepository('Bundle\PlayerBundle\Entity\PlayerEntity')
+            ->findAll();
+            // find($id);
+
+        $currentPlayers = $player;
+
+        return $this->render('PlayerBundle::load_player.html.twig', array(
+            'currentPlayers' => $currentPlayers,
+        ));
+    }
 }
