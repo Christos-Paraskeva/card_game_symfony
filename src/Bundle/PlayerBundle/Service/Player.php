@@ -3,7 +3,7 @@
 namespace Bundle\PlayerBundle\Service;
 
 use Bundle\PlayerBundle\Entity\PlayerEntity;
-use Doctrine\ORM\EntityRepository;
+
 
 class Player {
 
@@ -38,7 +38,7 @@ class Player {
 //        $this->em = $doctrineService;
 //    }
 
-    public function savePlayers($entityManager)
+    public function savePlayer($entityManager)
     {
         $em = $entityManager;
             $playerEntity = new PlayerEntity();
@@ -49,5 +49,17 @@ class Player {
             $em->persist($playerEntity);
             $em->flush();
     }
+
+//    public function loadPlayers()
+//    {
+////        $em = $playerEntity;
+////        return $playerEntity;
+//
+//        $playerEntity = $this->getDoctrine()
+//            ->getRepository('Bundle\PlayerBundle\Entity\PlayerEntity')
+//            ->findAll();
+//
+//        return $playerEntity;
+//    }
 
 }

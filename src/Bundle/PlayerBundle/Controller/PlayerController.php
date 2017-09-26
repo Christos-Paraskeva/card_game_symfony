@@ -33,7 +33,7 @@ class PlayerController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $player = $playerService->createPlayer(ucwords($playerName), $newPlayerId);
-        $player->savePlayers($em);
+        $player->savePlayer($em);
 
 //        $em->persist($player);
 //        $em->flush();
@@ -65,17 +65,35 @@ class PlayerController extends Controller
     /**
      * @Route("/load_player", name="load_player")
      */
+//    public function loadPlayerAction(Request $request)
+//    {
+//        $player = $this->getDoctrine()
+//            ->getRepository('Bundle\PlayerBundle\Entity\PlayerEntity')
+//            ->findAll();
+//            // find($id);
+//
+//        $currentPlayers = $player;
+//
+//        return $this->render('PlayerBundle::load_player.html.twig', array(
+//            'currentPlayers' => $currentPlayers,
+//        ));
+//    }
+
     public function loadPlayerAction(Request $request)
     {
-        $player = $this->getDoctrine()
+//        $playerService = $this->container->get('app.player');
+
+        $currentPlayers = $this->getDoctrine()
             ->getRepository('Bundle\PlayerBundle\Entity\PlayerEntity')
             ->findAll();
-            // find($id);
 
-        $currentPlayers = $player;
+        // find($id);
+//        $currentPlayers = $playerEntity;
+//        $currentPlayers = $playerService->loadPlayers($playerEntity);
 
         return $this->render('PlayerBundle::load_player.html.twig', array(
             'currentPlayers' => $currentPlayers,
         ));
     }
+
 }

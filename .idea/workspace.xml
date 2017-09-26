@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c2dc20-2a13-4268-baed-306f7c602b19" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php" afterPath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Entity/PlayerEntity.php" afterPath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Entity/PlayerEntity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Service/Player.php" afterPath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Service/Player.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php" afterPath="$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +33,9 @@
           <file leaf-file-name="Player.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Service/Player.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#47#91#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="241">
+                  <caret line="62" column="7" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="62" selection-end-column="7" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -88,7 +87,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <marker date="1503947337000" expanded="true" signature="0:62" ph="&lt;IfModule mod_authz_core.c&gt;" />
+                    <marker date="1503947337000" expanded="true" signature="63:142" ph="&lt;IfModule !mod_authz_core.c&gt;" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -132,11 +134,11 @@
           <file leaf-file-name="PlayerController.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-384">
-                  <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+                <state relative-caret-position="180">
+                  <caret line="83" column="39" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
                   <folding>
                     <element signature="e#50#109#0#PHP" expanded="true" />
-                    <marker date="1506424055000" expanded="true" signature="1038:1079" ph="..." />
+                    <marker date="1506442185000" expanded="true" signature="1037:1078" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -145,9 +147,11 @@
           <file leaf-file-name="PlayerTest.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-                  <folding />
+                <state relative-caret-position="252">
+                  <caret line="76" column="45" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+                  <folding>
+                    <element signature="e#53#105#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -276,13 +280,13 @@
         <option value="$PROJECT_DIR$/src/Bundle/DealerBundle/Service/Dealer.php" />
         <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Entity/Player.php" />
         <option value="$PROJECT_DIR$/app/config/config_test.yml" />
-        <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php" />
         <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Resources/views/player.html.twig" />
         <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Resources/views/load_player.html.twig" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Entity/PlayerEntity.php" />
-        <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php" />
+        <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php" />
         <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Service/Player.php" />
+        <option value="$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php" />
       </list>
     </option>
   </component>
@@ -449,7 +453,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101634000" />
+    <option name="totallyTimeSpent" value="104342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -492,7 +496,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -723,7 +734,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1503947337000" expanded="true" signature="0:62" ph="&lt;IfModule mod_authz_core.c&gt;" />
+            <marker date="1503947337000" expanded="true" signature="63:142" ph="&lt;IfModule !mod_authz_core.c&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -755,14 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -865,23 +871,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php">
+    <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Service/Player.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="241">
+          <caret line="62" column="7" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="62" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Tests/Service/PlayerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="76" column="45" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
           <folding>
-            <element signature="e#50#109#0#PHP" expanded="true" />
-            <marker date="1506424055000" expanded="true" signature="1038:1079" ph="..." />
+            <element signature="e#53#105#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Service/Player.php">
+    <entry file="file://$PROJECT_DIR$/src/Bundle/PlayerBundle/Controller/PlayerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="83" column="39" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <element signature="e#47#91#0#PHP" expanded="true" />
+            <element signature="e#50#109#0#PHP" expanded="true" />
+            <marker date="1506442185000" expanded="true" signature="1037:1078" ph="..." />
           </folding>
         </state>
       </provider>
