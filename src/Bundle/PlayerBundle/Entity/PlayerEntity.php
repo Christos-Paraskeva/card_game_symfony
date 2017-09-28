@@ -4,6 +4,9 @@ namespace Bundle\PlayerBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Bundle\DeckBundle\Entity\DeckEntity;
+
+
 
 
 
@@ -15,6 +18,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class PlayerEntity
 {
+
+    /**
+     * @ORM\OneToMany(targetEntity="Bundle\PlayerBundle\Entity\PlayerEntity", mappedBy="decks")
+     */
+    private $decks;
+
     /**
      * @ORM\Column(type="integer")
      * @ORM\Id

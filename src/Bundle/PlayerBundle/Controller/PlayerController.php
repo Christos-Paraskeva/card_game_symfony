@@ -35,11 +35,6 @@ class PlayerController extends Controller
         $player = $playerService->createPlayer(ucwords($playerName), $newPlayerId);
         $player->savePlayer($em);
 
-//        $em->persist($player);
-//        $em->flush();
-//        $player->getDoctrineService($em);
-//        $player->savePlayers($player->name);
-
         array_push($currentPlayers, $player);
 
         $session->set('currentPlayers', $currentPlayers);
@@ -51,45 +46,13 @@ class PlayerController extends Controller
     }
 
     /**
-     * @Route("/save_player", name="save_player")
-     */
-//    public function savePlayerAction(Request $request)
-//    {
-//
-//        $playerService = $this->container->get('app.player');
-//        $currentPlayersSession = $this->get('session')->get('currentPlayers');
-//
-//        delegate database work to player service
-//    }
-
-    /**
      * @Route("/load_player", name="load_player")
      */
-//    public function loadPlayerAction(Request $request)
-//    {
-//        $player = $this->getDoctrine()
-//            ->getRepository('Bundle\PlayerBundle\Entity\PlayerEntity')
-//            ->findAll();
-//            // find($id);
-//
-//        $currentPlayers = $player;
-//
-//        return $this->render('PlayerBundle::load_player.html.twig', array(
-//            'currentPlayers' => $currentPlayers,
-//        ));
-//    }
-
     public function loadPlayerAction(Request $request)
     {
-//        $playerService = $this->container->get('app.player');
-
         $currentPlayers = $this->getDoctrine()
             ->getRepository('Bundle\PlayerBundle\Entity\PlayerEntity')
             ->findAll();
-
-        // find($id);
-//        $currentPlayers = $playerEntity;
-//        $currentPlayers = $playerService->loadPlayers($playerEntity);
 
         return $this->render('PlayerBundle::load_player.html.twig', array(
             'currentPlayers' => $currentPlayers,
